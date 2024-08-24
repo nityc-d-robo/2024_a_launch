@@ -1,6 +1,9 @@
 <?xml version='1.0' ?>
 
 <launch>
+    
+    <node pkg="director_2024_a" exec="director_2024_a"></node>
+
     <!-- joy s -->
         <node pkg="joy" exec="joy_node">
             <param name="device_id" value="0"/>
@@ -96,10 +99,10 @@
 
 
     <!-- robots -->
-
-
-
-
-
+        <node pkg="robo1_2024_a"     exec="robo1_2024_a"    ></node>
+        <node pkg="robo2_1_2024_a"   exec="robo2_1_2024_a"  ></node>
+        <node pkg="robo2_2_1_2024_a" exec="robo2_2_1_2024_a"></node>
+        <node pkg="robo2_2_2_2024_a" exec="robo2_2_2_2024_a"></node>
+        <node pkg="robo2_3_2024_a"   exec="robo2_3_2024_a"  ></node>
 
 </launch>

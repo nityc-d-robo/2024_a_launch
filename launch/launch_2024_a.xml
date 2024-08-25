@@ -33,7 +33,7 @@
 
             <param name="require_enable_button" value="false"/>
             <param name="enable_turbo_button" value="-1"/>
-            <remap from="/joy" to="/r_joy1"/>
+            <remap from="/joy" to="/rjoy1"/>
             <remap from="/cmd_vel" to="/cmd_vel1"/>
         </node>
 
@@ -48,7 +48,7 @@
 
             <param name="require_enable_button" value="false"/>
             <param name="enable_turbo_button" value="-1"/>
-            <remap from="/joy" to="/r_joy2_1"/>
+            <remap from="/joy" to="/rjoy2_1"/>
             <remap from="/cmd_vel" to="/cmd_vel2_1"/>
         </node>
 
@@ -63,7 +63,7 @@
 
             <param name="require_enable_button" value="false"/>
             <param name="enable_turbo_button" value="-1"/>
-            <remap from="/joy" to="/r_joy2_2_1"/>
+            <remap from="/joy" to="/rjoy2_2_1"/>
             <remap from="/cmd_vel" to="/cmd_vel2_2_1"/>
         </node>
 
@@ -78,7 +78,7 @@
 
             <param name="require_enable_button" value="false"/>
             <param name="enable_turbo_button" value="-1"/>
-            <remap from="/joy" to="/r_joy2_2_2"/>
+            <remap from="/joy" to="/rjoy2_2_2"/>
             <remap from="/cmd_vel" to="/cmd_vel2_2_2"/>
         </node>
         
@@ -93,7 +93,7 @@
 
             <param name="require_enable_button" value="false"/>
             <param name="enable_turbo_button" value="-1"/>
-            <remap from="/joy" to="/r_joy2_3"/>
+            <remap from="/joy" to="/rjoy2_3"/>
             <remap from="/cmd_vel" to="/cmd_vel2_3"/>
         </node>
 

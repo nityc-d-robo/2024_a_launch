@@ -5,24 +5,24 @@
     <node pkg="director_2024_a" exec="director_2024_a"></node>
 
     <!-- joy s -->
-        <node pkg="joy" exec="joy_node">
+        <node pkg="joy" exec="joy_node" name="ojoy0">
             <param name="device_id" value="0"/>
             <remap from="/joy" to="/joy0"/>
         </node>
         
-        <node pkg="joy" exec="joy_node">
+        <node pkg="joy" exec="joy_node" name="ojoy1">
             <param name="device_id" value="1"/>
             <remap from="/joy" to="/joy1"/>
         </node>
 
-        <node pkg="joy" exec="joy_node">
+        <node pkg="joy" exec="joy_node" name="ojoy2">
             <param name="device_id" value="2"/>
             <remap from="/joy" to="/joy2"/>
         </node>
-
+    <!-- joy s -->
 
     <!-- cmd_vel publisher -->
-        <node pkg="teleop_twist_joy" exec="teleop_node">
+        <node pkg="teleop_twist_joy" exec="teleop_node" name="TTJ1"> 
             <param name="axis_linear.x" value="0"/>
             <param name="axis_linear.y" value="1"/>
             <param name="axis_angular.yaw" value="3"/>
@@ -37,7 +37,7 @@
             <remap from="/cmd_vel" to="/cmd_vel1"/>
         </node>
 
-        <node pkg="teleop_twist_joy" exec="teleop_node">
+        <node pkg="teleop_twist_joy" exec="teleop_node" name="TTJ2_1">
             <param name="axis_linear.x" value="0"/>
             <param name="axis_linear.y" value="1"/>
             <param name="axis_angular.yaw" value="3"/>
@@ -52,7 +52,7 @@
             <remap from="/cmd_vel" to="/cmd_vel2_1"/>
         </node>
 
-        <node pkg="teleop_twist_joy" exec="teleop_node">
+        <node pkg="teleop_twist_joy" exec="teleop_node" name="TTJ2_2_1">
             <param name="axis_linear.x" value="0"/>
             <param name="axis_linear.y" value="1"/>
             <param name="axis_angular.yaw" value="3"/>
@@ -67,7 +67,7 @@
             <remap from="/cmd_vel" to="/cmd_vel2_2_1"/>
         </node>
 
-        <node pkg="teleop_twist_joy" exec="teleop_node">
+        <node pkg="teleop_twist_joy" exec="teleop_node" name="TTJ2_2_2">
             <param name="axis_linear.x" value="0"/>
             <param name="axis_linear.y" value="1"/>
             <param name="axis_angular.yaw" value="3"/>
@@ -82,7 +82,7 @@
             <remap from="/cmd_vel" to="/cmd_vel2_2_2"/>
         </node>
         
-        <node pkg="teleop_twist_joy" exec="teleop_node">
+        <node pkg="teleop_twist_joy" exec="teleop_node" name="TTJ2_3">
             <param name="axis_linear.x" value="0"/>
             <param name="axis_linear.y" value="1"/>
             <param name="axis_angular.yaw" value="3"/>
@@ -96,7 +96,7 @@
             <remap from="/joy" to="/rjoy2_3"/>
             <remap from="/cmd_vel" to="/cmd_vel2_3"/>
         </node>
-
+    <!-- cmd_vel publisher -->
 
     <!-- robots -->
         <node pkg="robo1_2024_a"     exec="robo1_2024_a"    ></node>

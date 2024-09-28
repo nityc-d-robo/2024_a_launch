@@ -5,20 +5,20 @@
     <node pkg="director_2024_a" exec="director_2024_a"></node>
 
     <!-- joy s -->
-        <node pkg="joy" exec="joy_node" name="ojoy0">
+        <!-- <node pkg="joy" exec="joy_node" name="ojoy0">
             <param name="device_id" value="0"/>
             <remap from="/joy" to="/joy0"/>
-        </node>
+        </node> -->
         
         <node pkg="joy" exec="joy_node" name="ojoy1">
-            <param name="device_id" value="1"/>
+            <!-- <param name="device_id" value="1"/> -->
             <remap from="/joy" to="/joy1"/>
         </node>
 
-        <node pkg="joy" exec="joy_node" name="ojoy2">
+        <!-- <node pkg="joy" exec="joy_node" name="ojoy2">
             <param name="device_id" value="2"/>
             <remap from="/joy" to="/joy2"/>
-        </node>
+        </node> -->
     <!-- joy s -->
 
     <!-- cmd_vel publisher -->
